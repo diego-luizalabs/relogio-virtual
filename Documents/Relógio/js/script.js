@@ -1,7 +1,7 @@
 function atualizarRelogio() {
     const agora = new Date();
 
-    // Formatar Horário
+    // formatar horário
     let horas = agora.getHours();
     let minutos = agora.getMinutes();
     let segundos = agora.getSeconds();
@@ -13,9 +13,8 @@ function atualizarRelogio() {
     const horarioFormatado = `${horas}:${minutos}:${segundos}`;
     document.getElementById('relogio').textContent = horarioFormatado;
 
-    // Formatar Data
     const dia = String(agora.getDate()).padStart(2, '0');
-    const mes = String(agora.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
+    const mes = String(agora.getMonth() + 1).padStart(2, '0'); 
     const ano = agora.getFullYear();
     const diaSemana = obterDiaDaSemana(agora.getDay());
 
@@ -28,8 +27,6 @@ function obterDiaDaSemana(diaIndex) {
     return dias[diaIndex];
 }
 
-// Atualiza o relógio imediatamente ao carregar a página
 atualizarRelogio();
 
-// Atualiza o relógio a cada segundo
 setInterval(atualizarRelogio, 1000);

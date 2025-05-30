@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diego Santos - Suporte Técnico</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+
+    /* Barra lateral azul claro */
+    .sidebar {
+      background: #add8e6;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .card {
+      background: #4b83b5;
+      width: 250px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      background: #d3d3d3;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-top: 30px;
+    }
+
+    .card h2 {
+      margin: 10px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 5px 0 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .main {
+      width: 60%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 18px;
+    }
+
+    .header strong {
+      color: #0b1c3f;
+    }
+
+    .about {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: #0b1c3f;
+    }
+
+    .main h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .main h3 {
+      margin: 10px 0 30px;
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .curriculo {
+      background: blue;
+      color: white;
+    }
+
+    .projetos {
+      background: white;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="card">
+      <img alt="Foto de perfil" />
+      <h2>Diego<br>Santos</h2>
+      <hr style="width: 40px; margin: 10px auto; border: 1px solid black;">
+      <p>Analista Sup. Técnico</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="header"><strong>Diego Santos</strong> / Suporte Técnico</div>
+    <div class="about">Sobre Mim</div>
+
+    <h1>Olá</h1>
+    <h3>Meu perfil e projetos</h3>
+
+    <div class="buttons">
+  <button class="curriculo">Currículo</button>
+  <a href="../html/curriculo.html">
+  <button class="curriculo">Currículo</button>
+    <button class="projetos">Projetos</button>
+  </a>
+</div>
+
+  </div>
+
+</body>
+</html>
